@@ -6,28 +6,23 @@
  */
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
   useColorScheme,
   View,
 } from 'react-native';
 
 import {
   Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
 import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post';
+import feed from './assets/data/feed';
 
+const post1 = feed[0]
+const post2 = feed[1]
+const post3 = feed[2]
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -38,7 +33,10 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={backgroundStyle}>
       {/* <HomeScreen /> */}
-      <Post />
+      <Post post={post1}/>
+      {/* <Post post={post2}/>
+      <Post post={post3}/> */}
+  
     </SafeAreaView>
   );
 }
