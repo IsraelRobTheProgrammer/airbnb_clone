@@ -13,6 +13,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import HomeScreen from './src/screens/Home';
 import SearchResultScreen from './src/screens/SearchResults';
 import Post from './src/components/Post';
+import LocationSearch from './src/screens/LocationSearch';
 // import feed from './assets/data/feed';
 
 // const post1 = feed[0];
@@ -28,7 +29,8 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={backgroundStyle}>
       {/* <HomeScreen /> */}
- <SearchResultScreen/>
+ {/* <SearchResultScreen/> */}
+ <LocationSearch/>
     </SafeAreaView>
   );
 }
