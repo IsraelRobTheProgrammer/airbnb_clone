@@ -14,6 +14,8 @@ import HomeScreen from './src/screens/Home';
 import SearchResultScreen from './src/screens/SearchResults';
 import Post from './src/components/Post';
 import LocationSearch from './src/screens/LocationSearch';
+import Guests from './src/screens/Guest';
+
 // import feed from './assets/data/feed';
 
 // const post1 = feed[0];
@@ -29,8 +31,9 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={backgroundStyle}>
       {/* <HomeScreen /> */}
- {/* <SearchResultScreen/> */}
- <LocationSearch/>
+      {/* <SearchResultScreen/> */}
+      {/* <LocationSearch/> */}
+      <Guests />
     </SafeAreaView>
   );
 }

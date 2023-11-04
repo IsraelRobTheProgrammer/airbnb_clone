@@ -15,7 +15,7 @@ const LocationSearch = props => {
         value={textInput}
         onChange={setTextInput}
       />
-
+      {/* list of locations */}
       <FlatList
         data={searchRes}
         renderItem={({item}) => (
