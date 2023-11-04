@@ -6,23 +6,18 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {SafeAreaView, useColorScheme, View} from 'react-native';
 
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import HomeScreen from './src/screens/Home';
+import SearchResultScreen from './src/screens/SearchResults';
 import Post from './src/components/Post';
-import feed from './assets/data/feed';
+// import feed from './assets/data/feed';
 
-const post1 = feed[0]
-const post2 = feed[1]
-const post3 = feed[2]
+// const post1 = feed[0];
+// const post2 = feed[1];
+// const post3 = feed[2];
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -33,10 +28,7 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={backgroundStyle}>
       {/* <HomeScreen /> */}
-      <Post post={post1}/>
-      {/* <Post post={post2}/>
-      <Post post={post3}/> */}
-  
+ <SearchResultScreen/>
     </SafeAreaView>
   );
 }
