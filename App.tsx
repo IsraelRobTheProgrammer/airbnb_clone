@@ -4,7 +4,7 @@
  *
  * @format
  */
-
+import 'react-native-gesture-handler';
 import React from 'react';
 import {SafeAreaView, useColorScheme, View} from 'react-native';
 
@@ -15,6 +15,7 @@ import SearchResultScreen from './src/screens/SearchResults';
 import Post from './src/components/Post';
 import LocationSearch from './src/screens/LocationSearch';
 import Guests from './src/screens/Guest';
+import Router from './src/navigation/Router';
 
 // import feed from './assets/data/feed';
 
@@ -28,14 +29,7 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      {/* <HomeScreen /> */}
-      {/* <SearchResultScreen/> */}
-      {/* <LocationSearch/> */}
-      <Guests />
-    </SafeAreaView>
-  );
+  return <Router />;
 }
 
 export default App;

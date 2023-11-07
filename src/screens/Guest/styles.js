@@ -1,13 +1,18 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'space-between',
+    height: '100%',
+    // backgroundColor: "black",
+  },
   row: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingVertical: 20,
     marginHorizontal: 20,
     // paddingHorizontal: 20,
-    // padding: 20,
+    // backgroundColor: "black",
     borderBottomWidth: 1,
     borderColor: 'lightgray',
   },
@@ -38,6 +43,22 @@ const styles = StyleSheet.create({
     color: 'black',
     marginHorizontal: 16,
     fontSize: 16,
+  },
+
+  searchButton: {
+    marginBottom: 30,
+    backgroundColor: '#f15454',
+    alignItems: 'center',
+    justifyContent: 'center',
+    // width: 480,
+    marginHorizontal: 50,
+    height: 50,
+    borderRadius: 10,
+  },
+  searchButtonText: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
 
